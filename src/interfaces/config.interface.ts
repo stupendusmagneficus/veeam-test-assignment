@@ -70,24 +70,3 @@ export const isDate = (x: unknown): x is IDateInputConfig =>
 
 export const isButton = (x: unknown): x is IButtonConfig =>
   (x as any).type === 'button';
-
-export type IConfig = [
-  { type: 'number'; value: number; labelText: string; id: number },
-  { type: 'text'; placeholder: string; labelText: string; id: number },
-  { type: 'checkbox'; checked: number; labelText: string; id: number },
-  { type: 'radio'; checked: number; labelText: string; id: number },
-  { type: 'date'; labelText: string; id: number; date: string },
-  {
-    type: 'button';
-    buttonText: string;
-    id: number;
-    appearance: 'primary' | 'ghost';
-  }[],
-  {
-    type: 'textarea';
-    placeholder: string;
-    labelText: string;
-    id: number;
-    value: string;
-  },
-];

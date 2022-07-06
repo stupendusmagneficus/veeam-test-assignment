@@ -59,10 +59,7 @@ const TabsWrapper = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    alert(
-      `Hey there! Here you go with your config object, please check if its looks correct, otherwise you will not see the result! 
-      ${JSON.stringify(config)}`,
-    );
+    alert('All set! Please dont waste time and proceed to result tab!');
   };
 
   const handleChange = (e: { target: { value: string } }) =>

@@ -59,6 +59,7 @@ const ResultTab = (props: IResultTab) => {
                     buttonText={buttonText}
                     appearance={appearance}
                     key={id}
+                    onClick={(e) => e.preventDefault()}
                   />
                 );
               }
