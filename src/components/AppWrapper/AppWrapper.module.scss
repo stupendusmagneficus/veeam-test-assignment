@@ -1,0 +1,10 @@
+.appWrapper {
+  display: block;
+  margin: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .appWrapper {
+    margin: 100px;
+  }
+}
