@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -17,4 +17,10 @@
 .checkbox {
     width: 20px;
     height: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
 }

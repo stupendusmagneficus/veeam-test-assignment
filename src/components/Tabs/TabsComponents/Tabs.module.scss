@@ -7,10 +7,19 @@
 
 .buttonsWrapper {
   display: flex;
-  align-self: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
 }
 
 .configButton {
   align-self: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+  .buttonsWrapper {
+    flex-direction: row;
+    align-self: flex-end;
+    width: fit-content;
+  }
 }

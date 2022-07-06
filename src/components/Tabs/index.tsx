@@ -39,8 +39,8 @@ const STab = styled(Tab)`
 
 const STabPanel = styled(TabPanel)`
   display: none;
-  min-height: 60vh;
-  padding: 40px;
+  min-height: 40vh;
+  padding: 20px;
   margin-top: -5px;
   background-color: var(--white);
   border-radius: 6px;
