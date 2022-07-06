@@ -23,7 +23,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 In application code you can find some unnecessary npm packages, the reason is that i wanted to show you that i am able to use loots of different tools to develop.
 
-As well, i want to share with you my initial state object which you can modify and test the application
+As well, i want to share with you my example object with all required components which you can modify and test the application
 
 ```JSX
     [
@@ -33,11 +33,26 @@ As well, i want to share with you my initial state object which you can modify a
           labelText: 'Count',
           id: 7,
         },
+    
         {
           type: 'checkbox',
           checked: false,
           labelText: 'Is checked',
           id: 6,
+        },
+    
+        {
+          type: 'radio',
+          checked: true,
+          labelText: 'Is checked',
+          id: 9,
+        },
+    
+        {
+          type: 'date',
+          date: '2022-01-01',
+          labelText: 'Date',
+          id: 61,
         },
     
         {
@@ -79,7 +94,7 @@ As well, i want to share with you my initial state object which you can modify a
             buttonText: 'Not ok!',
             appearance: 'ghost',
             id: 2,
-          },
+          },    
         ],
     ],
 ```
