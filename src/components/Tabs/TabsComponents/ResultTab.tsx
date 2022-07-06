@@ -50,7 +50,7 @@ const ResultTab = (props: IResultTab) => {
         );
       } else if (Array.isArray(item)) {
         return (
-          <div className={styles.buttonsWrapper} key={i}>
+          <div className={styles.buttonsWrapper} key={`${i}-${item.length}`}>
             {item.map((button) => {
               if (isButton(button)) {
                 const { buttonText, appearance, id } = button;
