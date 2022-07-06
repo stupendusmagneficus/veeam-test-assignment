@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/global.scss';
-import AppWrapper from './components/AppWrapper/AppWrapper';
+import AppWrapper from './components/AppWrapper';
 import TabsWrapper from './components/Tabs';
 
 const Application = () => (

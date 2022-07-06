@@ -1,7 +1,7 @@
 import React from 'react';
-import TextArea from '../../TextArea/TextArea';
+import TextArea from '../../TextArea';
 import { textAreaPlaceholder } from '../../../helpers/textAreaPlaceholder';
-import Button from '../../Button/Button';
+import Button from '../../Button';
 import styles from './Tabs.module.scss';
 import { IConfigTab } from './TabsComponents.props';
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import NumberInput from '../../NumberInput/NumberInput';
-import TextInput from '../../TextInput/Textinput';
-import TextArea from '../../TextArea/TextArea';
-import CheckBox from '../../CheckBox/CheckBox';
-import Radio from '../../Radio/Radio';
-import DateInput from '../../DateInput/DateInput';
-import Button from '../../Button/Button';
+import NumberInput from '../../NumberInput';
+import TextInput from '../../TextInput';
+import TextArea from '../../TextArea';
+import CheckBox from '../../CheckBox';
+import Radio from '../../Radio';
+import DateInput from '../../DateInput';
+import Button from '../../Button';
 import { IResultTab } from './TabsComponents.props';
 import styles from './Tabs.module.scss';
 import {
@@ -23,9 +23,9 @@ const ResultTab = (props: IResultTab) => {
   if (!props.config) return <span>Please fill a config!</span>;
 
   try {
-    const config: IConfigProps = JSON.parse(props.config as any);
+    const config: IConfigProps = JSON.parse(props.config);
 
-    const result = config.map((item) => {
+    const result = config.map((item, i) => {
       if (isNumber(item)) {
         const { id, labelText, value } = item;
         return <NumberInput key={id} labelText={labelText} value={value} />;
@@ -50,7 +50,7 @@ const ResultTab = (props: IResultTab) => {
         );
       } else if (Array.isArray(item)) {
         return (
-          <div className={styles.buttonsWrapper} key={Math.random() * 7}>
+          <div className={styles.buttonsWrapper} key={i}>
             {item.map((button) => {
               if (isButton(button)) {
                 const { buttonText, appearance, id } = button;

@@ -1,15 +1,15 @@
 export const textAreaPlaceholder = `
-  {
-    buttons: [
-      {
-        buttonText: Apply;
-        appearance: 'primary' | 'ghost';
-      },
-    ],
-    textInputs: [
-      {
-        textLabel: 'Text input',
-      },
-    ],
-  }
+    {
+      type: 'number',
+      value: 7,
+      labelText: 'Count',
+      id: 7,
+    },
+
+    {
+      type: 'checkbox',
+      checked: false,
+      labelText: 'Is checked',
+      id: 6,
+    },
   `;
