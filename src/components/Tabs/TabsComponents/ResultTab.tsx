@@ -25,7 +25,7 @@ const ResultTab = (props: IResultTab) => {
   try {
     const config: IConfigProps = JSON.parse(props.config);
 
-    const result = config?.map((item, i) => {
+    const result = config.map((item, i) => {
       if (isNumber(item)) {
         const { id, labelText, value } = item;
         return <NumberInput key={id} labelText={labelText} value={value} />;
